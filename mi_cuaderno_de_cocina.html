@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>EnsuMesa</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+  	<link rel="stylesheet" href="includes/reset.css">
+  	<link rel="stylesheet" href="includes/skeleton.css">
+	<link rel="stylesheet" href="includes/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- JS
+	================================================== -->
+	<script src="includes/js/jquery-1.8.2.min.js"></script>
+	<script src="includes/js/modernizr-2.5.3.min.js"></script>
+
+	<script src="includes/js/jquery.flexslider-min.js"></script>
+	<script src="includes/js/flexslider_functions.js"></script>
+	
+
+	<!-- SELECT SKIN -->
+	<script src="includes/js/select-skin/jquery.select_skin.js"></script>
+	<link rel="stylesheet" type="text/css" href="includes/js/select-skin/jquery.select_skin.css">
+
+	<!-- FANCYBOX -->
+	<script src="includes/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script src="includes/js/fancybox/jquery.easing-1.3.pack.js"></script>
+	<script src="includes/js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="includes/js/fancybox/jquery.fancybox-1.3.4.css">
+
+	<!-- INSTAGRAM -->
+	<script src="includes/js/instagram.js"></script>
+	
+
+	<!-- INSTAGRAM -->
+	<script src="includes/js/instagram.js"></script>
+
+	<!-- HOME SLIDER ACCORDION -->
+	<script src="includes/js/enquire.min.js"></script>
+	<script src="includes/js/jquery.zaccordion.min.js"></script>
+	
+	<!--[if lt IE 10]>
+	<script>
+		$(document).ready(function() {
+			$("#home_gallery ul").zAccordion({
+				width: 900,
+				speed: 600,
+				slideClass: "slider",
+				slideWidth: 555,
+				height: 436,
+				auto: false,
+			});
+		});
+	</script>
+	<![endif]-->
+
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<script src="includes/js/homeGallery.js"></script>
+	<!--<![endif]-->
+
+	<!-- JQUERY UI -->
+	<script src="includes/js/jquery_ui/jquery-ui-1.10.3.custom.min.js"></script>
+	<!-- <link href="includes/js/jquery_ui/css/humanity/jquery-ui-1.10.3.custom.css" rel="stylesheet"> -->
+
+	<script>
+		Modernizr.load([
+	        {
+	            test: Modernizr.mq('(min-width: 320px) and (max-width: 728px)'),
+	            yep: ['includes/js/functions_mobile.js', ''],
+	            nope: 'includes/js/functions.js'
+	        },{
+	            test: Modernizr.mq('(min-width: 729px)'),
+	             yep: ['includes/js/functions.js']
+	        }
+	    ]);
+	</script>
+	<!-- <script src="includes/js/functions.js"></script> -->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="media/templates/favicon.ico">
+	<link rel="apple-touch-icon" href="media/templates/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="media/templates/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="media/templates/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+	<div id="page" class="mi_cuaderno_cocina logged">
+		<header>
+			<div class="container">
+				<h1 class="logo five columns">
+					<a href="index.html">
+						<img src="media/logo_ensumesa.png">
+					</a>
+				</h1>
+
+				<div class="welcome_msg">
+					<p>Bienvenido a <b>ensuMesa</b></p>
+				</div>
+
+				<div class="login_cart_module">
+					<ul class="deskto_pad">
+						<li class="short_nav_select">
+							<select class="short_nav">
+								<option>Ver mi cuaderno de cocina</option>
+								<option>Mis recetas</option>
+								<option>Mis menús</option>
+								<option>Mis colecciones</option>
+								<option>Mis foros</option>
+								<option>Editar perfil</option>
+								<option>Cerrar sesión</option>
+							</select>
+						</li>
+						<li><a class="user" href="">Juan Antonio Bermudez</a></li>
+						<li>
+							<div class="cart_block">
+								<div class="cart"><span>20</span></div>
+								<div class="cart_summary">
+									<h2>Pedido</h2>
+									<ul>
+										<li>
+											<a class="img_link" href=""><img width="56" src="media/img-thumb-product.png"></a>
+											<div class="info">
+												<h4><a href="">Nombre del producto mas largo</a></h4>
+												<h5>Categoría</h5>
+												<p class="price">$ XXX.XXX.XXX</p>
+												<a class="delete" href="">X</a>
+											</div>
+										</li>
+										<li>
+											<a class="img_link" href=""><img width="56" src="media/img-thumb-product.png"></a>
+											<div class="info">
+												<h4><a href="">Nombre del producto</a></h4>
+												<h5>Categoría</h5>
+												<p class="price">$ XXX.XXX.XXX</p>
+												<a class="delete" href="">X</a>
+											</div>
+										</li>
+									</ul>
+									<div class="botones">
+										<a class="close" href="">Cerrar</a>
+										<a class="btn" href="">Ir a pagar</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="mobile">
+						<li><a class="user" href="">Juan Antonio Bermudez</a></li>
+						<li class="short_nav_select">
+							<select class="short_nav">
+								<option>Ver mi cuaderno de cocina</option>
+								<option>Mis recetas</option>
+								<option>Mis menús</option>
+								<option>Mis colecciones</option>
+								<option>Mis foros</option>
+								<option>Editar perfil</option>
+								<option>Cerrar sesión</option>
+							</select>
+						</li>
+						<li>
+							<div class="cart_block">
+								<div class="cart"><span>20</span></div>
+								<div class="cart_summary">
+									<h2>Pedido</h2>
+									<ul>
+										<li>
+											<a class="img_link" href=""><img width="56" src="media/img-thumb-product.png"></a>
+											<div class="info">
+												<h4><a href="">Nombre del producto mas largo</a></h4>
+												<h5>Categoría</h5>
+												<p class="price">$ XXX.XXX.XXX</p>
+												<a class="delete" href="">X</a>
+											</div>
+										</li>
+										<li>
+											<a class="img_link" href=""><img width="56" src="media/img-thumb-product.png"></a>
+											<div class="info">
+												<h4><a href="">Nombre del producto</a></h4>
+												<h5>Categoría</h5>
+												<p class="price">$ XXX.XXX.XXX</p>
+												<a class="delete" href="">X</a>
+											</div>
+										</li>
+									</ul>
+									<div class="botones">
+										<a class="close" href="">Cerrar</a>
+										<a class="btn" href="">Ir a pagar</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="search_module">
+					<div class="form">
+						<select>
+							<option>Buscar</option>
+							<option>Todo</option>
+							<option>Recetas</option>
+							<option>Expertos</option>
+							<option>Ingredientes</option>
+							<option>Técnicas de cocina</option>
+							<option>Glosario</option>
+							<option>Blog</option>
+							<option>Comunidad</option>
+							<option>Fanáticos del sabor</option>
+							<option>Tienda</option>
+						</select>
+
+						<input type="text">
+						<input type="submit" value="search">
+					</div>
+					<p><a class="targetModals" href="#search_advance">Búsqueda avanzada de recetas</a></p>
+				</div>
+			</div>
+		</header>
+		<nav class="main_nav">
+			<div class="container">
+				<a class="menu mobile" href="">MENU</a>
+				<ul>
+					<li>
+						<a class="menu" href="recetas_landing.html">Recetas</a>
+						<div class="level-2">
+							<ul>
+								<li><h3><a href="recetas_categoria.html">cocinas del mundo</a></h3></li>
+								<li class="item-receta"><a href="recetas_search.html">americana</a></li>
+								<li class="item-receta"><a href="recetas_search.html">medio oriente</a></li>
+								<li class="item-receta"><a href="recetas_search.html">latina</a></li>
+								<li class="item-receta"><a href="recetas_search.html">colombiana</a></li>
+								<li class="item-receta"><a href="recetas_search.html">española</a></li>
+								<li class="item-receta"><a href="recetas_search.html">francesa</a></li>
+								<li class="item-receta"><a href="recetas_search.html">india</a></li>
+								<li class="item-receta"><a href="recetas_search.html">italiana</a></li>
+								<li class="item-receta"><a href="recetas_search.html">mediterránea</a></li>
+								<li class="item-receta"><a href="recetas_search.html">mexicana</a></li>
+								<li class="item-receta"><a href="recetas_search.html">oriental</a></li>
+								<li class="item-receta"><a href="recetas_search.html">peruana</a></li>
+								<li class="item-receta"><a href="recetas_search.html">otras</a></li>
+							</ul>
+							<ul>
+								<li><h3><a href="recetas_categoria.html">tipo de plato</a></h3></li>
+								<li class="item-receta"><a href="recetas_search.html">primer plato</a></li>
+								<li class="item-receta"><a href="recetas_search.html">plato fuerte</a></li>
+								<li class="item-receta"><a href="recetas_search.html">guarniciones</a></li>
+								<li class="item-receta"><a href="recetas_search.html">postre</a></li>
+								<li class="item-receta"><a href="recetas_search.html">pasabocas</a></li>
+								<li class="item-receta"><a href="recetas_search.html">otros</a></li>
+							</ul>
+							<ul>
+								<li><h3><a href="recetas_categoria.html">ocasiones</a></h3></li>
+								<li class="item-receta"><a href="recetas_search.html">desayunos</a></li>
+								<li class="item-receta"><a href="recetas_search.html">parrilla</a></li>
+								<li class="item-receta"><a href="recetas_search.html">lonchera</a></li>
+								<li class="item-receta"><a href="recetas_search.html">comida navideña</a></li>
+								<li class="item-receta"><a href="recetas_search.html">recetas de halloween</a></li>
+								<li class="item-receta"><a href="recetas_search.html">la hora del té</a></li>
+								<li class="item-receta"><a href="recetas_search.html">celebraciones</a></li>
+								<li class="item-receta"><a href="recetas_search.html">recetas infantiles</a></li>
+								<li class="item-receta"><a href="recetas_search.html">otras</a></li>
+							</ul>
+							<ul>
+								<li><h3><a href="recetas_categoria.html">preparación</a></h3></li>
+								<li class="item-receta"><a href="recetas_search.html">bebidas</a></li>
+								<li class="item-receta"><a href="recetas_search.html">cocteles</a></li>
+								<li class="item-receta"><a href="recetas_search.html">sopas</a></li>
+								<li class="item-receta"><a href="recetas_search.html">ensaladas</a></li>
+								<li class="item-receta"><a href="recetas_search.html">pastas</a></li>
+								<li class="item-receta"><a href="recetas_search.html">salsas</a></li>
+								<li class="item-receta"><a href="recetas_search.html">vinagretas y aderezos</a></li>
+								<li class="item-receta"><a href="recetas_search.html">panadería</a></li>
+								<li class="item-receta"><a href="recetas_search.html">pastelería</a></li>
+								<li class="item-receta"><a href="recetas_search.html">arroz</a></li>
+								<li class="item-receta"><a href="recetas_search.html">otras</a></li>
+							</ul>
+							<ul class="last">
+								<li><h3><a href="recetas_categoria.html">Estilo de vida</a></h3></li>
+								<li class="item-receta"><a href="recetas_search.html">recetas vegetarianas</a></li>
+								<li class="item-receta"><a href="recetas_search.html">recetas fáciles</a></li>
+								<li class="item-receta"><a href="recetas_search.html">recetas saludables</a></li>
+								<li class="item-receta"><a href="recetas_search.html">recetas creativas</a></li>
+								<li class="item-receta"><a href="recetas_search.html">recetas en familia</a></li>
+								<li class="item-receta last"><h3><a href="temporada.html">sugerencias de temporada</a></h3></li>
+							</ul>
+						</div>
+					</li>
+					<li><a class="menu" href="expertos_list.html">Expertos Colaboradores</a></li>
+					<li>
+						<a class="menu" href="">Aprenda <br> y cocine</a>
+						<div class="level-2">
+							<ul>
+								<li><h3><a href="ingredientes_landing.html">ingredientes</a></h3></li>
+							</ul>
+							<ul>
+								<li><h3><a href="tecnicas_landing_function.html">técnicas de cocina</a></h3></li>
+							</ul>
+							<ul>
+								<li><h3><a href="glosario.html">glosario</a></h3></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a class="menu" href="comunidad.html">Comunidad</a>
+						<div class="level-2">
+							<ul>
+								<li><h3><a href="mi_cuaderno_de_cocina.html">mi cuaderno<br> de cocina</a></h3></li>
+							</ul>
+							<ul>
+								<li><h3><a href="editar_perfil.html">editar perfil</a></h3></li>
+							</ul>
+							<ul>
+								<li><h3><a href="foros_landing.html">foros</a></h3></li>
+							</ul>
+						</div>
+					</li>
+					<li><a class="menu" href="fanaticos_landing.html">fanáticos <br> del sabor</a></li>
+					<li><a class="menu" href="blog.html">Blog</a></li>
+					<li><a class="menu" href="tienda_landing.html">Tienda</a></li>
+				</ul>
+			</div>
+		</nav>
+		<section id="breadcrumb">
+			<div class="container">
+				<ul>
+					<li class="first"><a class="home" href="">Inicio</a></li>
+					<li><a href="">Level 2</a></li>
+					<li class="last">Level 3</li>
+				</ul>
+			</div>
+		</section>
+
+
+
+		<div class="page_content container">
+
+			<!-- USER PROFILE -->
+			<div id="user_profile">
+				<div class="img_cont">
+					<img class="foto_usuario_big" width="75" src="media/samples/usuarioBig.jpg">
+				</div>
+				<div class="info">
+					<h3 class="user_name">Mi cuaderno de cocina <a class="btn floatRight" href="">Editar mi perfil</a></h3>
+				</div>
+			</div>
+			<!-- END USER PROFILE -->
+
+			<!--COLUMAN IZQUIERDA -->
+			<div class="ten columns offset-by-one alpha">
+				<div class="miperfil">
+					<h2><span class="mis">MIS</span> recetas</h2>
+
+					<section id="recetas_cat_list">
+
+						<ul>
+
+							<li class="clearfix">
+								<div class="content">
+									<img width="98" src="media/fpo-img-receta-thumb.jpg">
+									<div class="info">
+										<h3><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h3>
+										<p class="chef">Chef: <a href="">Juan Fernando Herran</a></p>
+										<p class="description">Lorem ipsum dolor sit amet faucibus vel vestibulum condimentum suscipit fames. Taciti. Lorem ipsum dolor sit amet faucibus vel vestibulum condimentum suscipit fames. Taciti.</p>
+									</div>
+								</div>
+							</li>
+
+							<li class="clearfix">
+								<div class="content">
+									<img width="98" src="media/fpo-img-receta-thumb.jpg">
+									<div class="info">
+										<h3><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h3>
+										<p class="chef">Chef: <a href="">Juan Fernando Herran</a></p>
+										<p class="description">Lorem ipsum dolor sit amet faucibus vel vestibulum condimentum suscipit fames. Taciti. Lorem ipsum dolor sit amet faucibus vel vestibulum condimentum suscipit fames. Taciti.</p>
+									</div>
+								</div>
+							</li>
+							
+						</ul>
+
+					</section>
+
+					<h2><span class="mis">MIS</span> colecciones</h2>
+
+					<section id="miscolecciones" class="clearfix">
+
+						<div class="coleccion img_cont">
+							<span class="smallcount">13</span>
+							<div class="wrapper_img_grande">
+								<img width="130" src="media/fpo-img-receta-thumb.jpg">
+							</div>
+							<div class="wrapper_img_peq">
+								<img width="64" src="media/fpo-img-receta-thumb.jpg">
+								<img width="64" src="media/fpo-img-receta-thumb.jpg">
+								<img width="64" src="media/fpo-img-receta-thumb.jpg">
+								<img width="64" src="media/fpo-img-receta-thumb.jpg">
+							</div>
+						</div>
+
+						<div class="coleccion img_cont">
+							<span class="smallcount">13</span>
+							<div class="wrapper_img_grande">
+								<img width="130" src="media/fpo-img-receta-thumb.jpg">
+							</div>
+							<div class="wrapper_img_peq">
+								<img width="64" src="media/fpo-img-receta-thumb.jpg">
+								<img width="64" src="media/fpo-img-receta-thumb.jpg">
+								<img width="64" src="media/fpo-img-receta-thumb.jpg">
+								<img width="64" src="media/fpo-img-receta-thumb.jpg">
+							</div>
+						</div>
+
+					</section>
+
+					<h2><span class="mis">MIS</span> Menús</h2>
+
+					<section class="listados">
+						<a href="#" class="floatRight">Ver todos</a>
+						<h3>Menús semanales</h3>
+						<ul>
+							<li><a href="#">Master Wayne, you've been gone a long time. You look very fashionable. Apart from the mud.</a></li>
+							<li><a href="#">And why do we fall? So we can learn to pick ourselves up.</a></li>
+							<li><a href="#">Dr. Crane isn't here right now. But if you'd like to make an appointment.</a></li>
+						</ul>
+						<div class="line_break"></div>
+						<a href="#" class="floatRight">Ver todos</a>
+						<h3>Menús por ocasión</h3>
+						<ul>
+							<li><a href="#">Master Wayne, you've been gone a long time. You look very fashionable. Apart from the mud.</a></li>
+							<li><a href="#">And why do we fall? So we can learn to pick ourselves up.</a></li>
+							<li><a href="#">Dr. Crane isn't here right now. But if you'd like to make an appointment.</a></li>
+						</ul>
+					</section>
+
+					<a href="#" class="foros_link floatRight">Ver todos</a>
+					<h2 class="foros_lista"><span class="mis">MIS</span> Foros</h2>
+
+					<section class="listados">
+
+						<ul>
+							<li><a href="#">Master Wayne, you've been gone a long time. You look very fashionable. Apart from the mud.</a></li>
+							<li><a href="#">And why do we fall? So we can learn to pick ourselves up.</a></li>
+							<li><a href="#">Dr. Crane isn't here right now. But if you'd like to make an appointment.</a></li>
+						</ul>
+						
+					</section>
+
+					<h2 class="foros_lista text_center">¿Qué está pasando en la comunidad?</h2>
+						<section class="blog_list">
+
+							<article class="clearfix">
+								<div class="flag_mark blog">
+									<div class="flag_content">
+										<img src="media/icn-ensumesa-cafe.png" />
+										<span class="texto-fuera text_center">Blog</span>
+									</div>
+								</div>
+								<div class="wrapper three columns alpha">
+								<img src="media/samples/blog1.jpg" >
+								</div>
+								<div class="seven columns omega">
+										<h3><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h3>
+										<p class="chef">Chef: <a href="">Juan Fernando Herran</a></p>
+										<p class="description">Lorem ipsum dolor sit amet faucibus vel vestibulum condimentum suscipit fames. Taciti. Lorem ipsum dolor sit amet faucibus vel vestibulum condimentum suscipit fames. Taciti.</p>
+									</div>
+							</article>
+
+							<div class="line_break"></div>
+
+							<article class="clearfix">
+								<div class="flag_mark blog">
+									<div class="flag_content">
+										<img src="media/icn-ensumesa-cafe.png" />
+										<span class="texto-fuera text_center">Fanáticos del sabor</span>
+									</div>
+								</div>
+								<div class="wrapper three columns alpha">
+								<img src="media/samples/blog2.jpg">
+								</div>
+								<div class="seven columns omega">
+										<h3><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h3>
+										<p class="chef">Chef: <a href="">Juan Fernando Herran</a></p>
+										<p class="description">Lorem ipsum dolor sit amet faucibus vel vestibulum condimentum suscipit fames. Taciti. Lorem ipsum dolor sit amet faucibus vel vestibulum condimentum suscipit fames. Taciti.</p>
+									</div>
+							</article>
+
+						</section>
+
+						<div class="line_break"></div>
+
+						<section id="colecciones_recomendadas">
+
+							<article class="clearfix">
+
+								<div class="flag_mark">
+									<div class="flag_content usuario">
+										<img src="media/samples/usuario36.jpg" />
+										<span class="texto-fuera text_center">Manuel de Calderón</span>
+									</div>
+								</div>
+								
+								<img src="media/samples/colecc1.jpg" class="sextaparte columns" />
+								<img src="media/samples/colecc2.jpg" class="sextaparte columns" />
+								<img src="media/samples/colecc3.jpg" class="sextaparte columns" />
+								<img src="media/samples/colecc4.jpg" class="sextaparte columns" />
+								<div  class="sextaparte columns">
+									<h3><a href="#">Nombre de la colección</a></h3>
+									
+									<div class="esquina_inferior">
+										<div class="calificar">
+											<div class="valor">
+												<div class="calificacion" style="width:77%">
+												</div>
+											</div>
+										</div><br/>
+										<a href="#">ver colección</a>
+									</div>
+								</div>
+
+							</article>
+
+							<div class="line_break"></div>
+
+							<article class="clearfix">
+
+								<div class="flag_mark">
+									<div class="flag_content usuario">
+										<img src="media/samples/usuario36.jpg" />
+										<span class="texto-fuera text_center">Manuel de Calderón</span>
+									</div>
+								</div>
+								
+								<img src="media/samples/colecc1.jpg" class="sextaparte columns" />
+								<img src="media/samples/colecc2.jpg" class="sextaparte columns" />
+								<img src="media/samples/colecc3.jpg" class="sextaparte columns" />
+								<img src="media/samples/colecc4.jpg" class="sextaparte columns" />
+								<div  class="sextaparte columns">
+									<h3><a href="#">Nombre de la colección</a></h3>
+									
+									<div class="esquina_inferior">
+										<div class="calificar">
+											<div class="valor">
+												<div class="calificacion" style="width:77%">
+												</div>
+											</div>
+										</div><br/>
+										<a href="#">ver colección</a>
+									</div>
+								</div>
+
+							</article>
+
+
+						</section>
+
+						<div class="line_break extramargin"></div>
+
+						<section class="blog_list ">
+
+							<article class="clearfix">
+								<div class="flag_mark blog">
+									<div class="flag_content">
+										<img src="media/icn-ensumesa-cafe.png" />
+										<span class="texto-fuera text_center">Foro</span>
+									</div>
+								</div>
+								
+								<div>
+									<a href="#" class="floatRight">Ir a la discusión</a>
+									<h3><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit</a></h3>
+									<p class="description">Lorem ipsum dolor sit amet faucibus vel vestibulum condimentum suscipit fames. Taciti. Lorem ipsum dolor sit amet faucibus vel vestibulum condimentum suscipit fames. Taciti.</p>
+								</div>
+							</article>
+
+						</section>
+
+						<div class="line_break extramargin"></div>
+
+						<div class="prev_next_btns">
+							<a href="#" class="btn">Actualizaciones anteriores</a>
+							<a href="#" class="btn floatRight">Actualizaciones siguientes</a>
+						</div>
+					
+				</div>		
+			</div>
+			
+			<!--COLUMAN DERECHA -->
+			<div class="one-third column omega">
+
+				<!-- MEDALLAS -->
+				<section class="medallas"> 
+					<div class="fondo">
+						<header>
+							<img src="media/ribbon-big.png">
+							<h1>ensuMesa</h1>
+							Reconoce su participación dentro de la comunidad
+						</header>
+						<div class="medalla_bienvenido">
+							<div class="wrapper-medallas clearfix">
+								<div class="medalla_bienv"><span>180</span></div>
+								<div class="medalla_2"></div>
+								<div class="medalla_3"></div>
+								<div class="over_dialog_box">
+									<p>Bienvenido a <b>ensuMesa</b> seek the means to fight injustice. To turn fear against those who prey on the fearful.</p></td>
+									<img src="media/triangle_right.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- /MEDALLAS -->
+
+				<div class="user_box">
+					<div class="amigos clearfix">
+						<span class="smallcount">130</span>
+						<h2><a href="#">SEGUIDORES</a></h2>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuarioBig.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario4.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario2.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario3.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario2.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario3.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario4.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuarioBig.jpg" /></a>
+						<a href="#followers" class="targetModals more">Ver todos</a>
+					</div>
+				</div>
+
+
+				<div class="user_box">
+					<div class="amigos clearfix">
+						<span class="smallcount">10</span>
+						<h2><a href="#">SIGUIENDO A</a></h2>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuarioBig.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario4.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario2.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario3.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario2.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario3.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario4.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuario.jpg" /></a>
+						<a href="#" title="Nombre de usuario"><img width="44" src="media/samples/usuarioBig.jpg" /></a>
+						<a href="#following" class="targetModals more">Ver todos</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!-- FOOTER -->
+			<footer>
+			<div class="container">
+				<div class="tab-promo">
+					<a href="javascript:void" id="click-me" class="btn">Haga click acá y Descubra los beneficios al hacer parte de nuestra comunidad</a>
+					<div class="slide-out-content"><img src="media/samples/razones-esm.jpg"></div>
+				</div>
+				<div class="wrapper-footer-items">
+					<div class="tablet_Row">
+						<ul class="first">
+							<li><h1><img alt="ensuMesa" src="media/logo-ensumesa-footer.png"></h1></li>
+							<li class="copyright">2013 © ensumesa.com</li>
+							<li><a href="terminos.html">Términos & Condiciones</a></li>
+							<li><a href="">Políticas de Privacidad</a></li>
+						</ul>
+						<ul>
+							<li><h3>Aprender</h3></li>
+							<li><a href="expertos_list.html">Expertos</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="fanaticos_landing.html">Fanáticos del sabor</a></li>
+						</ul>
+						<ul>
+							<li><h3>Cocinar</h3></li>
+							<li><a href="recetas_landing.html">Recetas</a></li>
+							<li><a href="ingredientes_landing.html">Ingredientes</a></li>
+							<li><a href="tecnicas_landing_function.html">Técnicas</a></li>
+							<li><a href="glosario.html">Glosario</a></li>
+						</ul>
+						<ul>
+							<li><h3>Interactuar</h3></li>
+							<li><a href="mi_cuaderno_de_cocina.html">Mi cuaderno de cocina</a></li>
+							<li><a href="mis_menus.html">Mis menús</a></li>
+							<li><a href="mis_colecciones.html">Mis colecciones</a></li>
+							<li><a href="foros_landing.html">Foro</a></li>
+						</ul>
+					</div>
+					<div class="tablet_Row">
+						<ul class="social_module">
+							<li><a class="facebook" href="#">facebook</a></li>
+							<li><a class="twitter" href="#">twitter</a></li>
+							<li><a class="pinterest" href="#">pinterest</a></li>
+							<li><a class="youtube" href="#">you tube</a></li>
+							<li><a class="instagram" href="#">instagram</a></li>
+						</ul>
+						<div class="newsletter_block">
+							<h4>Reciba nuestro Newsletter</h4>
+							<input type="email" placeholder="email@email.com"> <input class="btn" type="submit" value="suscribir">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div id="modals_content">
+			<div id="search_advance" class="">
+				<input type="text" placeholder="Liste dos o tres ingredientes, el nombre de la receta o el tipo de preparación">
+				<h2>Opciones para búsqueda avanzada de recetas</h2>
+				<div class="block">
+					<h4>Tipo de Plato</h4>
+					<table>
+						<tr>
+							<td>
+								<input id="check_01" class="checkSkin" type="checkbox" value="1" name="check_01">
+								<label for="check_01">Opción</label>
+								<label class="checkSkin" for="check_01">Primer Plato (34)</label>
+							</td>
+							<td>
+								<input id="check_02" class="checkSkin" type="checkbox" value="1" name="check_02">
+								<label for="check_02">Opción</label>
+								<label class="checkSkin" for="check_02">Plato Fuerte (45)</label>
+							</td>
+							<td>
+								<input id="check_03" class="checkSkin" type="checkbox" value="1" name="check_03">
+								<label for="check_03">Opción</label>
+								<label class="checkSkin" for="check_03">Guarniciones (98)</label>
+							</td>
+							<td>
+								<input id="check_04" class="checkSkin" type="checkbox" value="1" name="check_04">
+								<label for="check_04">Opción</label>
+								<label class="checkSkin" for="check_04">Postre (37)</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input id="check_05" class="checkSkin" type="checkbox" value="1" name="check_05">
+								<label for="check_05">Opción</label>
+								<label class="checkSkin" for="check_05">Pasabocas (78)</label>
+							</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div class="block">
+					<h4>Estilos de vida</h4>
+					<table>
+						<tr>
+							<td>
+								<input id="check_06" class="checkSkin" type="checkbox" value="1" name="check_06">
+								<label for="check_06">Opción</label>
+								<label class="checkSkin" for="check_06">Recetas vegetarianas (34)</label>
+							</td>
+							<td>
+								<input id="check_07" class="checkSkin" type="checkbox" value="1" name="check_07">
+								<label for="check_07">Opción</label>
+								<label class="checkSkin" for="check_07">Recetas fáciles (45)</label>
+							</td>
+							<td>
+								<input id="check_08" class="checkSkin" type="checkbox" value="1" name="check_08">
+								<label for="check_08">Opción</label>
+								<label class="checkSkin" for="check_08">Recetas saludables (98)</label>
+							</td>
+							<td>
+								<input id="check_09" class="checkSkin" type="checkbox" value="1" name="check_09">
+								<label for="check_09">Opción</label>
+								<label class="checkSkin" for="check_09">Recetas creativas (37)</label>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="block last">
+					<table>
+						<tr>
+							<td>
+								<label>Cocinas del mundo</label>
+								<select>
+									<option>Todas</option>
+									<option>Todas</option>
+									<option>Todas</option>
+									<option>Todas</option>
+									<option>Todas</option>
+								</select>
+							</td>
+							<td>
+								<label>Ocasiones</label>
+								<select>
+									<option>Todas</option>
+									<option>Todas</option>
+									<option>Todas</option>
+									<option>Todas</option>
+									<option>Todas</option>
+								</select>
+							</td>
+							<td>
+								<label>Preparación</label>
+								<select>
+									<option>Todas</option>
+									<option>Todas</option>
+									<option>Todas</option>
+									<option>Todas</option>
+									<option>Todas</option>
+								</select>
+							</td>
+							<td>
+								<label>Sugerencias de temporada</label>
+								<select>
+									<option>Todas</option>
+									<option>Todas</option>
+									<option>Todas</option>
+									<option>Todas</option>
+									<option>Todas</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+					<p><input type="submit" class="btn" value="Buscar"></p>
+				</div>
+
+			</div>
+
+			<!-- MODAL CONFIRMACION -->
+			<div id="confirmacion" class="modal">
+				<div class="header">
+					<h2>bienvenido a</h2>
+					<h3>ensuMesa</h3>
+					<p>La primera comunidad de amigos de la cocina en español.</p>
+				</div>
+				<div class="content">
+					<p class="text_center">Tus datos han sido creados exitosamente. Gracias por ser parte de Ensumesa dolor sit amet. Nibh mattis laoreet euismod placerat, dictumst sit rutrum In elit dictumst penatibus. Nulla, sit penatibus Sed montes pulvinar congue nibh Aenean Praesent semper blandit! Sed.</p>
+				</div>
+			</div>
+
+			<!-- MODAL FOLLOWERS -->
+			<div id="followers" class="modal box-amigos">
+				<span class="smallcount">130</span>
+				<h2>Seguidores</h2>
+				<div class="content">
+					<div class="wrapper-amigo">
+					
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario.jpg">
+								<p class="direccion">Nombre largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario4.jpg">
+								<p class="direccion">Nombre de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario2.jpg">
+								<p class="direccion">Nombre muy muy largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario3.jpg">
+								<p class="direccion">Nombre largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario.jpg">
+								<p class="direccion">Nombre largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario4.jpg">
+								<p class="direccion">Nombre de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario2.jpg">
+								<p class="direccion">Nombre muy muy largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario3.jpg">
+								<p class="direccion">Nombre largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario.jpg">
+								<p class="direccion">Nombre largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario4.jpg">
+								<p class="direccion">Nombre de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario2.jpg">
+								<p class="direccion">Nombre muy muy largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario3.jpg">
+								<p class="direccion">Nombre largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario.jpg">
+								<p class="direccion">Nombre largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario4.jpg">
+								<p class="direccion">Nombre de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario2.jpg">
+								<p class="direccion">Nombre muy muy largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario3.jpg">
+								<p class="direccion">Nombre largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario.jpg">
+								<p class="direccion">Nombre largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario4.jpg">
+								<p class="direccion">Nombre de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario2.jpg">
+								<p class="direccion">Nombre muy muy largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario3.jpg">
+								<p class="direccion">Nombre largo de seguidor</p>
+							</a>
+
+						</div>
+
+					</div><!-- /wrapper amigo -->
+
+				</div><!-- /content -->
+
+			</div><!-- /modal box-amigos -->
+
+			<!-- MODAL FOLLOWING -->
+			<div id="following" class="modal box-amigos">
+				<span class="smallcount">10</span>
+				<h2>Siguiendo a</h2>
+				<div class="content">
+					<div class="wrapper-amigo">
+					
+						<div class="post-amigo">
+							<a href="" class="link-amigo" class="link-amigo">
+								<img width="44" src="media/samples/usuario.jpg">
+								<p class="direccion">Nombre largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario4.jpg">
+								<p class="direccion">Nombre de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario2.jpg">
+								<p class="direccion">Nombre muy muy largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario3.jpg">
+								<p class="direccion">Nombre largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario.jpg">
+								<p class="direccion">Nombre largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario4.jpg">
+								<p class="direccion">Nombre muy muy largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario2.jpg">
+								<p class="direccion">Nombre de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario3.jpg">
+								<p class="direccion">Nombre largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario.jpg">
+								<p class="direccion">Nombre largo de seguidor</p>
+							</a>
+
+						</div>
+
+						<div class="post-amigo">
+							<a href="" class="link-amigo">
+								<img width="44" src="media/samples/usuario4.jpg">
+								<p class="direccion">Nombre muy muy largo de seguidor</p>
+							</a>
+
+						</div>
+
+					</div><!-- /wrapper amigo -->
+
+				</div><!-- /content -->
+
+			</div><!-- /modal box-amigos -->
+
+
+
+		</div><!-- /modals-content -->
+	</div>
+
+</body>
+</html>
