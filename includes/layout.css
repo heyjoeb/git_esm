@@ -105,6 +105,9 @@ footer .newsletter_block h4 {color: #3DAAA8;}
     HEADER
 **************************************************************************************************************** */
 header {}
+.container .logo.five {
+    width: 287px;
+}
 header h1.logo {margin-top: 40px; border: medium none !important;}
 header h1.logo a {display: block;}
 
@@ -119,7 +122,7 @@ header .login_cart_module {
     float: right;
     clear: right;
     margin: 7px 10px 7px 0;
-  width: 22%;
+    width: 22%;
 }
 header .login_cart_module li {float: left; list-style: none;}
 header .login_cart_module li a {padding: 0 7px; color: #806d66;}
@@ -598,7 +601,7 @@ footer .wrapper-footer-items {
     padding: 26px;
 }
 #fanaticos_gallery .flexslider {margin: 0;}
-#fanaticos_gallery .flexslider img {margin-bottom: 8px;}
+#fanaticos_gallery .flexslider img {margin-bottom: 8px; height: 400px;}
 #fanaticos_gallery .flexslider .flex-direction-nav a {
     background: url("/media/slider-controls_t2.png") no-repeat scroll left center;
     background-color: rgba(0, 0, 0, 0.6);
@@ -673,7 +676,7 @@ footer .wrapper-footer-items {
     background-image: url(/media/bg-promo-fanaticos.png);
     padding: 10px 7px;
 }
-#promo_fanaticos img{ width: 99.9%;}
+#promo_fanaticos img{ width: 100%;}
 #promo_fanaticos li {display: none;}
 /*#promo_fanaticos .header {
     background-color: #3D312A;
@@ -684,10 +687,9 @@ footer .wrapper-footer-items {
 #promo_fanaticos .header {
     background-color: #3D312A;
     color: #FFFFFF;
-    padding: 10px;
-    position: absolute;
+    padding: 10px 0;
     text-align: center;
-    width: 88.5%;
+    width: 100%;
 }
 #promo_fanaticos .header h3 {
     background: url("/media/misc-title-line.png") repeat-x scroll center bottom transparent;
@@ -744,6 +746,18 @@ footer .wrapper-footer-items {
 #coleccion_destacada .btn {margin-top: 15px;}
 #coleccion_destacada h2 {text-align: left;}
 #coleccion_destacada img {float: left; margin: 4px;}
+#coleccion_destacada .wrapper_img_grande img {
+    width: 135px;
+}
+#coleccion_destacada .wrapper_img_peq img {
+    width: 64px;
+}
+.comunidad #coleccion_destacada .wrapper_img_grande img {
+    width: 130px;
+}
+.comunidad #coleccion_destacada .wrapper_img_peq img {
+    width: 62px;
+}
 #coleccion_destacada h3 {font-size: 16px; color: #3DAAA8;}
 #coleccion_destacada .rating,
 #menu_destacado .rating {position: absolute; right: 0; top: 28px;}
@@ -830,6 +844,13 @@ footer .wrapper-footer-items {
 #menu_destacado.block .info {margin-left: 140px;}
 #menu_destacado.block .info h3 {font-size: 14px;}
 #menu_destacado.block .info .description {margin-top: 8px; font-size: 12px;}
+.comunidad #menu_destacado .wrapper_img_grande img {
+    width: 130px;
+}
+.comunidad #menu_destacado .wrapper_img_peq img {
+    width: 62px;
+}
+
 
 #blog.block {}
 #blog.block p.description {font-weight: 100; margin: 10px 0;}
@@ -852,7 +873,7 @@ footer .wrapper-footer-items {
 #recetas_destacadas h2 {margin-bottom: 8px;}
 #recetas_destacadas .ui-tabs-panel ul li {overflow: hidden; margin-bottom: 10px; border-bottom: 1px solid #CCCCCC; padding-bottom: 10px;}
 #recetas_destacadas .ui-tabs-panel ul li.last {border-bottom: none; margin-bottom: 0; padding-bottom: 0;}
-#recetas_destacadas .ui-tabs-panel  ul li img {float: left;}
+#recetas_destacadas .ui-tabs-panel  ul li img {float: left; width: 85px;}
 #recetas_destacadas .ui-tabs-panel  ul li .info {margin-left: 100px; width: 170px;}
 #recetas_destacadas .ui-tabs-panel  .info .chef {font-size: 11px;}
 
@@ -918,7 +939,7 @@ footer .wrapper-footer-items {
 #tienda_block_home p {color: #666666; font-size: 12px;}
 #tienda_block_home a.btn {margin-bottom: 15px;}
 #tienda_block_home .product_tienda {width: auto; margin: 0 auto; padding:0 15px; }
-#tienda_block_home .product_tienda img {margin: 0 auto 8px;width: 136px;}
+#tienda_block_home .product_tienda img {margin: 0 auto 8px;width: 130px;}
 #tienda_block_home .flexslider {margin-bottom: 10px;}
 #tienda_block_home .flexslider .flex-direction-nav .flex-prev {left: 15%;}
 #tienda_block_home .flexslider .flex-direction-nav .flex-next {right: 15%;}
@@ -982,6 +1003,7 @@ footer .wrapper-footer-items {
 **************************************************************************************************************** */
 #page.recetas_landing {}
 
+/*  galería */
 #recetas_gallery {
     background-color: #EFE9E2;
     padding: 10px;
@@ -990,7 +1012,7 @@ footer .wrapper-footer-items {
 }
 #recetas_gallery .flexslider {margin: 0;}
 #recetas_gallery .flexslider li { overflow: hidden; }
-#recetas_gallery .flexslider img {float: right; }
+#recetas_gallery .flexslider img {float: right; width: 350px; }
 #recetas_gallery .wrapper-texto-recetas-gallery {
     float: left;
     margin-left: 15%;
@@ -1041,11 +1063,11 @@ footer .wrapper-footer-items {
     white-space: nowrap;
     overflow: hidden;
 }
-
+/*  fin galería */
 
 #recetas_list {margin: 20px 0;}
 #recetas_list li {overflow: hidden; border-top: 1px solid #CCCCCC; margin: 10px 0; padding: 7px 0;}
-#recetas_list li img {float: left;}
+#recetas_list li img {float: left; width: 98px;}
 #recetas_list li h2 {font-weight: 600; margin-bottom: 8px;}
 #recetas_list li h2 a {color: #3D312A;}
 #recetas_list li h2 a:hover {color: #3DAAA8; text-decoration: none;}
@@ -1078,7 +1100,7 @@ footer .wrapper-footer-items {
 #gallery_recetas_landing .content .info .chef {margin: 3px 0;}
 #recetas_cat_list {margin: 40px 0;}
 #recetas_cat_list li, .recetas_cat_list li {border-top: 1px solid #CCCCCC; margin: 10px 0; padding: 7px 0;}
-#recetas_cat_list li img, .recetas_cat_list li img{float: left;}
+#recetas_cat_list li img, .recetas_cat_list li img{float: left; width: 98px; }
 #recetas_cat_list li h2, .recetas_cat_list li h2{font-weight: 600; margin-bottom: 4px;}
 #recetas_cat_list li h2 a, .recetas_cat_list li h2 a {color: #3D312A;}
 #recetas_cat_list li h2 a:hover, .recetas_cat_list li h2 a:hover {color: #3DAAA8; text-decoration: none;}
@@ -1117,7 +1139,7 @@ footer .wrapper-footer-items {
     top: 8px;
 }
 #page.recetas_landing h1 {font-size: 24px; font-weight: 100; margin-bottom: 8px;}
-#line_separetor_content .container .twelve.columns {width: 725px;}
+#line_separetor_content .container .twelve.columns {width: 720px;}
 
 
 
@@ -1226,7 +1248,7 @@ footer .wrapper-footer-items {
     .texto p { margin-top: 15px; }
 
 /*Comentarios*/
-.foto_usuario{ float: left; margin-right: 10px;}
+.foto_usuario{ float: left; margin-right: 10px; width: 56px; }
     .comentar{ border:solid 1px #CCC; position: relative; text-align: right;}
     .comentar img{ position: absolute; top: 10px; left: -11px;}
     .comentar textarea{ display: block; width: 94%; border: none; padding: 10px 3%; height: 90px; color: #666;}
@@ -1264,7 +1286,13 @@ footer .wrapper-footer-items {
     .abc p{ font-weight: 100; font-size: 15px;}
     .abc p a{ display: inline-block; margin: 0 7px 0 0 }
     #ingredientes_busqueda ul{ display: block; margin: 0 0 0 -2.4%; padding: 5px 0;}
-    #ingredientes_busqueda li{ float: left; width: 22.5%; margin:0 0 10px 2.4%; min-height: 260px; overflow: hidden; }
+    #ingredientes_busqueda li{ 
+        float: left;
+        margin: 0 0 10px 2.4%;
+        min-height: 260px;
+        overflow: hidden;
+        width: 22.5%;
+    }
     #ingredientes_busqueda ul a{ line-height: auto;}
     a.foto_lista_ingrediente img{ border:solid 1px #CCC; display:block; width: 100%;}
     a.foto_lista_ingrediente:hover img{ border-color: #3DAAA8;}
@@ -1362,7 +1390,7 @@ header .welcome_msg {
     border-top: 1px solid #EFE9E2;
     padding-top: 8px;
     padding-left: 8px;
-  width: 21%;
+    width: 21%;
 }
 #page.logged header .login_cart_module ul.mobile {display: none;}
 #page.logged header .short_nav_select .short_nav {width: 190px;}
@@ -1598,6 +1626,12 @@ header .welcome_msg {
 .mis_colecciones .btn.floatRight {
     margin-right: 60px;
 }
+.mis_colecciones .colecciones_box  .post_colecciones .wrapper_img_grande img {
+    width: 131px;
+}
+.mis_colecciones .colecciones_box .post_colecciones .wrapper_img_peq img {
+    width: 64px;
+}
 
 
 .post_colecciones { width: 275px; float: left; margin-right: 30px; margin-bottom: 25px; margin-left: 25px; }
@@ -1608,6 +1642,12 @@ header .welcome_msg {
 .post_colecciones .img_cont {overflow: hidden;}
 .post_colecciones .img_cont img {float: left; margin: 2px;}
 .post_colecciones:nth-child(odd) { margin-left: 0; margin-right: 0; }
+.colecciones .post_colecciones .wrapper_img_grande img {
+    width: 131px;
+}
+.colecciones .post_colecciones .wrapper_img_peq img {
+    width: 64px;
+}
 
 
 #page.mis_colecciones_detail .cargarmas {padding: 10px 0;}
@@ -1694,7 +1734,9 @@ header .welcome_msg {
 #search_advance.modal {padding: 0;}
 
 
-#notas.modal {}
+#notas.modal img, #agregar_coleccion.modal img, #agregar_menu.modal img {
+    width: 155px;
+}
 
 .radio_more_block {
     background: url(/media/misc_lineSeparator_arrow.png) no-repeat center top;
@@ -1859,6 +1901,7 @@ p.facebook {
 .box-amigos .post-amigo img {
     float: left;
     margin-right: 10px;
+    width: 44px;
 }
 .box-amigos .post-amigo .link-amigo {
     display: table;
@@ -1948,7 +1991,7 @@ p.facebook {
     overflow: hidden;
     padding: 25px;
 }
-#blog_post_destacado .content .img_cont {float: left;}
+#blog_post_destacado .content .img_cont {float: left; max-width: 250px; }
 #blog_post_destacado .content .info {margin-left: 245px;}
 #blog_post_destacado .content .info .data {overflow: hidden; margin-bottom: 10px; border-bottom: 1px dotted #CCCCCC; padding-bottom: 7px;}
 #blog_post_destacado .content .info h2 {margin-bottom: 10px;}
@@ -1984,14 +2027,26 @@ p.facebook {
 #page.blog_detail .back { float: right; margin-top: 25px; }
 
 .blog_detail .img_cont {float: left; margin-right: 20px; }
-.blog_detail .post_content {
-    clear: both;
-}
+
+
 .blog_detail .eleven  .img_cont {
     margin-bottom: 20px;
 }
 .blog_detail .post_content .img_cont {
     margin-bottom: 0;
+}
+.blog_detail .img_cont_vertical {
+    float: left;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    margin-top: 5px;
+    max-width: 300px;
+}
+.blog_detail .img_cont_horizontal {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    
 }
 
 
@@ -2004,7 +2059,16 @@ p.facebook {
 .blog_post {overflow: hidden; margin-bottom: 25px; border-bottom: 1px solid #CCCCCC; padding-bottom: 25px;}
 .blog_post.last {border-bottom: none;}
 .blog_post .img_cont {float: left; margin-right: 20px;}
-.blog_post .img_cont_horizontal {float: left; margin-right: 20px;}
+.blog_post .img_cont_horizontal {
+    float: left; 
+    margin-right: 20px;
+    max-width: 300px;
+}
+.blog_post .img_cont_vertical {
+    float: left; 
+    margin-right: 20px;
+    max-width: 250px;
+}
 .blog_post .info {}
 .blog_post .info .data {
     border-bottom: 1px dotted #CCCCCC;
@@ -2150,6 +2214,12 @@ p.facebook {
 .menus .autor a { color: #3DAAA8; }
 .menus .post_colecciones:nth-child(odd) { margin-left: 0; margin-right: 30px; }
 .menus .post_colecciones { margin-bottom: 15px; }
+.menus .post_colecciones .wrapper_img_grande img {
+    width: 131px;
+}
+.menus .post_colecciones .wrapper_img_peq img {
+    width: 64px;
+}
 
 
 /* **************************************************************************************************************** 
@@ -2228,12 +2298,9 @@ p.facebook {
 }
 .fanatico_destacado .header {
     background-color: #3D312A;
-    left: 10px;
     overflow: hidden;
-    position: absolute;
     text-align: center;
-    top: 10px;
-    width: 97.3%;
+    width: 100%
 }
 .fanatico_destacado .header h2 {color: #FFFFFF; font-size: 30px; font-family: 'merriweather'; text-transform: uppercase; font-weight: 100; margin: 20px 0 0;}
 .fanatico_destacado .header h3 {color: #FFFFFF; font-size: 16px; font-weight: 100; margin-bottom:20px;  }
@@ -2245,12 +2312,12 @@ p.facebook {
 .fanaticos_post .info {
     background-color: #FFFFFF;
     min-height: 213px;
-    padding: 10px;
+    padding: 15px 10px;
     text-align: center;
 }
 .fanaticos_post .info h3 {font-weight: 600; font-size: 18px; margin: 10px 0; color: #3D312A;}
 .fanaticos_post .info h4 a {font-size: 14px; font-weight: 600;}
-.fanaticos_post .info p {margin: 0 0 10px;}
+.fanaticos_post .info p {margin: 0 25px 10px;}
 .fanaticos_post .info p a {color: #3DAAA8; }
 .fanaticos_post .ribbonM {
     background: url("/media/ribbon-big.png") no-repeat scroll left top transparent;
@@ -2267,17 +2334,21 @@ p.facebook {
     margin-right: 20px;
     margin-bottom: 5px;
     margin-top: 5px;
+    max-width: 300px;
 }
 .fanaticos_detail .main_content p {
     margin: 15px 0;
 }
 .fanaticos_detail .main_content .img_cont_horizontal {
     margin-bottom: 20px;
+    float: left;
+    margin-right: 20px;
+    width: 100%;
 }
 /* **************************************************************************************************************** 
     PAGE FANATICOS CATEGORY DETAIL
 **************************************************************************************************************** */
-.fanaticos_detail .share-module { list-style: none; padding: 0; float: left; margin-left: 20px; margin-top: 20px; }
+.fanaticos_detail .share-module { list-style: none; padding: 0; float: right; margin-left: 20px; margin-top: 20px; }
 .fanaticos_detail .share-module li { display: inline; }
 
 
@@ -2296,7 +2367,7 @@ p.facebook {
 /* paginador */
 .reloadGlosario {
     text-align: center;
-  width: 140%;
+    width: 140%;
 }
 .reloadGlosario li {
      display: inline;
@@ -2516,7 +2587,7 @@ p.facebook {
 .product_img_cont {background: url("/media/bg-blog-destacado.png") repeat-y scroll left top rgba(0, 0, 0, 0); padding: 20px; margin-top: 20px;}
 
 #page.tienda_detail .relacionadas {margin: 20px 0;}
-#page.tienda_detail .recetas_relacionadas li {margin: 0 9px 25px 15px;}
+#page.tienda_detail .recetas_relacionadas li {margin: 0 9px 25px 15px; width: 118px;}
 
 
 
@@ -2534,7 +2605,7 @@ p.facebook {
 }
 #tienda_gallery .flexslider {margin: 0;}
 #tienda_gallery .flexslider li { overflow: hidden; }
-#tienda_gallery .flexslider img {float: right; }
+#tienda_gallery .flexslider img {float: right; width: 350px; }
 #tienda_gallery .wrapper-texto-tienda-gallery {
     float: left;
     margin-left: 15%;
@@ -2642,6 +2713,13 @@ p.facebook {
     .coleccion{ width: 49%; float: left; margin-left: 1%;}
     .coleccion .smallcount{ margin: -30px 7px 0}
 
+    .miperfil #miscolecciones .coleccion .wrapper_img_grande img {
+    width: 135px;
+    }
+    .miperfil #miscolecciones .coleccion .wrapper_img_peq img {
+        width: 66px;
+    }
+
     #miscolecciones{ margin-left: -2%; }
     .listados h3{ font-size: 16px; color: #3d312a; font-weight: 100;}
     .listados li{ color:#3DAAA8; margin-top: 10px;}
@@ -2678,7 +2756,7 @@ p.facebook {
         .user_box .amigos{ clear: both;}
         .user_box .amigos h2{ font-size: 12px; text-transform: uppercase; margin: 5px 0;}
         .user_box .smallcount{ margin: 3px 0 0;}
-        .user_box .amigos img{ float: left; margin: 6px 6px 0 0;}
+        .user_box .amigos img{ float: left; margin: 6px 6px 0 0; width: 44px;}
     .medallas{ background: #efe9e2 url(/media/trama.png) top right; padding: 8px; margin:20px 0 0 10px; }
         .medallas .fondo{ background-color: #efe9e2;}
         .medallas header{ background: url(/media/dientes.png) repeat-x top right; text-align: center; padding: 10px 50px 10px 20px; position: relative; line-height: 120%; color: #3d312a;} 
@@ -2764,6 +2842,9 @@ h2.foros_lista.text_center{ margin-bottom: .7em;}
     .flag_mark.blog img{ vertical-align: middle;}
     .texto-fuera{ width: 60px; position: absolute; top: 40px; left: 50%; margin-left: -30px; font-size: 11px; line-height: 105%;}
     .flag_content{ position: relative;}
+    .flag_content img {
+        width: 36px;
+    }
     .blog_list .line_break{ margin: 15px 0; height: 2px; border-top: solid 1px #CCC; border-width: 1px 0 0;}
     .blog_list img.columns{ display: block;}
     .blog_list h3{ font-size: 14px; margin-bottom: .66em;}
@@ -3134,7 +3215,7 @@ h2.foros_lista.text_center{ margin-bottom: .7em;}
 .expertos_header{ margin-top:20px;  }
     .expertos_list .page_content h1{ border-top: solid 1px #CCC; display: block; padding-top: 10px;}
     .expertos_list h2{ margin-top: 10px; }
-    .lista_chefs{ clear: both; display: block; padding: 15px 0 0; width: 105%;}
+    .lista_chefs{ clear: both; display: block; padding: 15px 0 0; }
     #nuestro_equipo li{ background: #efe9e2 url(/media/trama.png); position: relative;}
     .lista_chefs li{ margin-bottom: 15px;}
     .lista_chefs img{ border: solid 1px #CCC;}
@@ -3225,7 +3306,11 @@ h2.foros_lista.text_center{ margin-bottom: .7em;}
 #destacado-temporada .img_center { margin-bottom: 20px; }
 #destacado-temporada h1 { text-align: center; margin-bottom: 8px; }
 .temporada .wrapper-descarga { border-top: 1px dashed #CCCCCC; margin-bottom: 5px; margin-top: 15px; padding-top: 20px; }
-#destacado-temporada .img_cont img { float: left; margin: 4px;}
+#destacado-temporada .img_cont img { 
+     
+    margin: 4px;
+    width: 140px;
+}
 #destacado-temporada .img_cont { overflow: hidden; position: relative; margin-bottom: 15px; margin-right: 0 }
 .pauta-interna { text-align: center; margin-bottom: 20px; }
 .temporada #recetas_gallery {
@@ -3865,6 +3950,12 @@ h2.foros_lista.text_center{ margin-bottom: .7em;}
             margin-right: 0;
             margin-top: 25px;
         }
+        .blog_post .img_cont_horizontal {
+            max-width: none;
+        }
+        .blog_post .img_cont_vertical {
+            max-width: none;
+        }
 
         /* page :: fanaticos detail */
         .fanaticos_detail #fanaticos_destacados #fanaticos_gallery .logo_patroinador {
@@ -3880,6 +3971,14 @@ h2.foros_lista.text_center{ margin-bottom: .7em;}
         .fanaticos_detail #fanaticos_destacados #fanaticos_gallery h3 {
             text-align: center;
         }
+        .fanaticos_detail .main_content .img_cont_vertical {
+            float: none;
+            margin-right: 0;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            max-width: none;
+            text-align: center;
+        }
 
         /* page :: blog landing */
         .blog #blog_post_destacado .content .img_cont {
@@ -3891,13 +3990,31 @@ h2.foros_lista.text_center{ margin-bottom: .7em;}
             margin-left: 0;
         }
         .blog_post .img_cont_horizontal {float: none; margin-right: 0; margin-bottom: 20px; text-align: center;}
-        
+        .blog_post .img_cont_vertical {
+            float: none;
+            max-width: none;
+            text-align: center;
+        }
 
         /* page :: blog detail */
         .blog_detail .post_content .img_cont {
             float: none;
             text-align: center;
-        }  
+        } 
+        .blog_detail .img_cont_vertical {
+            float: none;
+            margin-bottom: 5px;
+            margin-right: 20px;
+            margin-top: 5px;
+            max-width: none;
+            text-align: center;
+        }
+        #blog_post_destacado .content .img_cont {
+            max-width: none;
+        }
+        .blog_post .info {
+            margin-top: 20px !important;
+        } 
 
         /* page :: tienda landing */
         #page.tienda_landing .producto_destacado .info {
@@ -4826,3 +4943,16 @@ nav.main_nav ul li #unique-5041.level-2 ul {
 .click-pro {
     cursor: pointer;
 }
+
+
+.page_content #destacado-temporada > p {
+    display: none;
+}
+
+.page_content #destacado-temporada > a {
+    display: none;
+}
+
+/*.blog_detail .post_content {
+    clear: both;
+}*/
